@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import Password from "../feature/home/pages/password";
 import Home from "../feature/home/pages/home";
-import Login from "../feature/home/pages/login";
+import Details from "../feature/home/pages/details";
 const Stack = createStackNavigator();
 
 export default function MyStack() {
@@ -16,20 +15,7 @@ export default function MyStack() {
                 headerTintColor: "white",
             }}>
             <Stack.Screen name="Home" component={Home} />
-            <Stack.Screen
-                name="Password"
-                component={Password}
-                options={{
-                    title: "My Password",
-                }}
-            />
-            <Stack.Screen
-                name="Login"
-                component={Login}
-                options={{
-                    gestureEnabled: false,
-                }}
-            />
+            <Stack.Screen name="Details" component={Details} />
         </Stack.Navigator>
     );
 }

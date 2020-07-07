@@ -17,3 +17,18 @@ export function clearError(error) {
         },
     };
 }
+
+export function fetchUser(error) {
+    return {
+        type: types.USER_FETCH_REQUEST,
+    };
+}
+
+export function setUserDetails(user) {
+    return {
+        type: types.SET_USER_DETAILS,
+        payload: {
+            user: user,
+        },
+    };
+}
