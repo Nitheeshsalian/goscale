@@ -1,0 +1,6 @@
+{
+    "typescript.validate.enable": false,
+    "typescript.format.enable": false,
+    "typescript.check.npmIsInstalled": false,
+    "javascript.validate.enable": false
+}
